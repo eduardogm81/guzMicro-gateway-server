@@ -8,11 +8,11 @@ spring:
             - Path=/api/products/**
           filters:
             - StripPrefix=2
-            - name: SampleCookie
-              args:
-                cookieName: myCookie
-                value: myValue
-                message: Mensaje personalizado para productos
+#            - name: SampleCookie
+#              args:
+#                cookieName: myCookie
+#                value: myValue
+#                message: Mensaje personalizado para productos
         - id: items
           uri: lb://items/
           predicates:
